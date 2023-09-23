@@ -1,6 +1,10 @@
+## 概要
+GithubActionsで回すRspecのDB用に作成しました。
+OSDNが死んでいて、curlだと失敗するためローカルのインストールしたパッケージごとイメージにしています。
+
 ## github packagesへの公開（更新）手順  
 1. イメージのビルド  
-`docker image build --platform linux/amd64 . -t postgres13_including_pgbigm`
+`docker image build --platform linux/amd64 . -t postgres13_including_pgbigm:latest`
    
 2. アクセストークンの作成  
 下記リンクから作成（repoの権限を付与しないため）  
